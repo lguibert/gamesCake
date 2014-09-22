@@ -1,13 +1,4 @@
-<!--<div class="span2">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div>
-            
-            -->
-            
 <?php 
-
     foreach ($datas as $key => $data) {
         echo "<div class='span3'>";
         
@@ -26,4 +17,15 @@
         echo "</a>";
         
         echo "</div>";
-    }
+}
+?>
+
+<?= $this->start('sidebar'); ?>
+    <ul class="nav nav-list">
+        <?php
+            foreach($gametypes as $gt){
+                echo "<li><a href='http://localhost/gamesCake/recherche/".$gt['Gametype']['id']."'>".$gt['Gametype']["NAME_GAMETYPE"]."</a></li>";
+            }
+        ?>
+    </ul>
+<?= $this->end();?>

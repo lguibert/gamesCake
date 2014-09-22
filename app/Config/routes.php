@@ -35,6 +35,10 @@
                 array('controller' => 'games', 'action' => 'focus'), 
                 array('pass' => array('id'), 'id' => '[0-9]+'));
         
+         Router::connect('/recherche/:id', 
+                array('controller' => 'games', 'action' => 'search'), 
+                array('pass' => array('id'), 'id' => '[0-9]+'));
+        
         
         Router::connect('/ajouter', array('controller' => 'games', 'action' => 'add'));
 

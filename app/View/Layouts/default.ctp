@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!--<link rel="shortcut icon" href="media/img/logo.png" type="image/jpg"/> -->
+    <?=$this->Html->meta('favicon.ico','/logo.png',array('type' => 'icon'));?>
 
     <!-- Le styles -->
     <?php
@@ -65,12 +67,9 @@
       <div class="row-fluid">
         <div class="span1">
           <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>              
-            </ul>
+            
+              <?= $this->fetch("sidebar"); ?>
+              
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span11">
