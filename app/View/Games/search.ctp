@@ -6,7 +6,7 @@
 
             echo "<a href='http://localhost/gamesCake/jeu/".$game['Game']['id']."'>";
 
-            echo "<h2>".$game['Game']['NAME_GAME']."</h2>";
+            echo "<h2>".$game['Game']['NAME_GAME']."</h2>"; 
 
             echo $this->Html->image("upload/".$game['Game']['PHOTO_GAME'], array('class' => 'imgGame span4', 'alt' => $game['Game']['NAME_GAME']));
 
